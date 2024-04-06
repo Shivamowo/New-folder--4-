@@ -1,0 +1,109 @@
+body{
+    border: 0px;
+}
+.front {
+    border: 5px solid rgb(142, 140, 255);
+    height:750px;
+    width: 1283px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    z-index:2;
+    border-radius: 24px;
+    background-color:rgb(229, 230, 248);
+    opacity:0.95;
+
+}
+.channel-shift {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+
+#button{
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+    height: 20px;
+    border: none;
+    z-index: 0.5;
+}
+.phase1{
+    color: white;
+    background-color: black;
+}
+.phase2 {
+    background-color: rgb(162, 149, 149);
+    color: rgb(237, 223, 223);
+    z-index: 2;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.interests{
+    width:250px;
+    height:50px;
+    border-radius: 40px;
+    font-size: 22px;
+    margin:10px 10px 10px 10px;
+}
+.interests:hover {
+    background-color: rgb(140, 148, 255);
+}
+
+.button-margin{
+    position: relative;
+    margin-left: 300px;
+}
+.sector-selection {
+    position: relative;
+    top: 80px;
+    margin:10px 10px 10px 10px;
+}
+.back_img {
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    z-index:-1;
+    
+}
+.ele3{
+    position: relative;
+    top:120px;
+    left:1000px;
+    right: 0px;
+    
+}
+.next-button{
+    height: 60px;
+    width:140px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: rgb(140, 148, 255);
+    border:none;
+    opacity: 0.6;
+}
+.shift {
+    display: inline-block;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#desc{
+    text-align: center;
+    font-size: 20px;
+}
+.line {
+    border-bottom: 3px solid rgb(162, 149, 149);
+    display: relative;
+    margin-bottom: 60px;
+    width: 200px;
+}
+.tick{
+  padding-right:10px;
+}
