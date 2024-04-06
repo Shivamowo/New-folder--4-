@@ -220,3 +220,9 @@ body {
     margin-left: -2px;
 }
 
+#top-left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* This ensures that the image is displayed on top of other elements */
+  }

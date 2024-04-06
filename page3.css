@@ -60,6 +60,7 @@
         }
         .back_img {
             position: absolute;
+            size: cover;
             left:0px;
             bottom:0px;
             z-index:-1;
@@ -125,4 +126,28 @@
             margin-bottom: 0;
         }
 
-    
+        .ele3{
+            position: relative;
+            top: 70px;
+            left:500px;
+            right: 0px;
+            
+        }
+        .next-button{
+            height: 60px;
+            width:140px;
+            border-radius: 30px;
+            font-size: 20px;
+            background-color: rgb(140, 148, 255);
+            border:none;
+            opacity: 0.6;
+            margin-left: 30%;
+        }
+
+
+        #top-left-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* This ensures that the image is displayed on top of other elements */
+          }

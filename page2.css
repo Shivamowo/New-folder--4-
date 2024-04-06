@@ -107,3 +107,10 @@ h1{
 .tick{
   padding-right:10px;
 }
+
+#top-left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* This ensures that the image is displayed on top of other elements */
+  }
