@@ -1,84 +1,146 @@
 
-        body{
-            border: 0px;
-        }
-        .front {
-            border: 5px solid rgb(142, 140, 255);
-            height:750px;
-            width: 1283px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 60px;
-            z-index:2;
-            border-radius: 24px;
-            background-color:rgb(229, 230, 248);
-            opacity:0.95;
+body{
+    border: 0px;
+}
+.front {
+    border: 5px solid rgb(142, 140, 255);
+    height:750px;
+    width: 1283px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    z-index:2;
+    border-radius: 24px;
+    background-color:rgb(229, 230, 248);
+    opacity:0.95;
 
-        }
-        .channel-shift {
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 70px ;
-           
-        }
-        
-        
-        #button{
-            margin-left: 100px;
-            margin-right: 100px;
-            border-radius: 10px;
-            color: white;
-            background-color: black;
-            z-index: 0.5;
-        }
-        .phase2 {
-            background-color: grey;
-            color: black;
-            z-index: 2;
-        }
-        h1{
-            margin-left: 370px;
-        }
-        #interests{
-            width:250px;
-            height:45px;
-            border-radius: 40px;
-            font-size: 22px;
-            margin:10px 10px 10px 10px;
-        }
-        .button-margin{
-            position: relative;
-            margin-left: 300px;
-        }
-        .sector-selection {
-            position: relative;
-            left: 100px;
-            right: auto;
-            top: 80px;
-            justify-content: center;
-        }
-        .back_img {
-            position: absolute;
-            left:0px;
-            bottom:0px;
-            z-index:-1;
-            
-        }
-        .ele3{
-            position: relative;
-            top:160px;
-            left:1000px;
-            
-        }
-        .next-button{
-            height: 60px;
-            width:140px;
-            border-radius: 30px;
-            font-size: 20px;
-            background-color: rgb(140, 148, 255);
-            border:none;
-        }
-        .shift {
-            display: inline-block;
-        } 
+}
+.channel-shift {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+    /* margin-bottom: 200px; */
+}
+
+
+.shift {
+    display: inline-block;
+}
+.line {
+    border-bottom: 3px solid rgb(162, 149, 149);
+    display: relative;
+    margin-bottom: 60px;
+    width: 200px;
+}
+.phase1{
+    color: white;
+    background-color: rgb(212, 8, 8);
+}
+.phase2 {
+    background-color: rgb(162, 149, 149);
+    color: rgb(237, 223, 223);
+    z-index: 2;
+}
+#desc{
+    margin-left: 60px
+}
+
+
+
+#button{
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    z-index: 0.5;
+}
+.phase2 {
+    background-color: grey;
+    color: black;
+    z-index: 2;
+}
+h1{
+    margin-left: 370px;
+}
+#interests{
+    width:250px;
+    height:45px;
+    border-radius: 40px;
+    font-size: 22px;
+    margin:10px 10px 10px 10px;
+}
+.button-margin{
+    position: relative;
+    margin-left: 300px;
+}
+.sector-selection {
+    position: relative;
+    left: 100px;
+    right: auto;
+    top: 80px;
+    justify-content: center;
+}
+.back_img {
+    position: absolute;
+    size: cover;
+    left:0px;
+    bottom:0px;
+    z-index:-1;
+    
+}
+
+
+
+  .comment-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .comment-box textarea {
+    width: 70%;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 120px;
+    margin-left: 160px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    resize: vertical;
+  }
+  
+  .comment-box button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment-box button:hover {
+    background-color: #45a049;
+  }
+
+  .ele3{
+    position: relative;
+    top:0px;
+    left:1000px;
+    
+}
+.next-button{
+    height: 60px;
+    width:140px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: rgb(140, 148, 255);
+    border:none;
+}

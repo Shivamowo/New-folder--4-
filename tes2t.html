@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <div class="posts-container"></div>
+    <form class="post-form">
+      <input type="text" class="post-input" placeholder="What's on your mind?">
+      <button type="submit" class="post-button">Post</button>
+    </form>
+</html>
+<style>.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .post {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  .post-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .post-input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  
+  .post-button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }</style>
+
+
+<script>// Fetch the posts from a server or a local data source
+    const posts = [
+      {
+        title: 'Post 1',
+        content: 'This is the content of post 1.'
+      },
+      {
+        title: 'Post 2',
+        content: 'This is the content of post 2.'
+      },
+      {
+        title: 'Post 3',
+        content: 'This is the content of post 3.'
+      }
+    ];
+    
+    // Create a new div element for each post
+    const postsContainer = document.querySelector('.posts-container');
+    posts.forEach(post => {
+      const postDiv = document.createElement('div');
+      postDiv.classList.add('post');
+      postDiv.innerHTML = `
+        <h2>${post.title}</h2>
+        <p>${post.content}</p>
+      `;
+      postsContainer.appendChild(postDiv);
+    });
+    
+    // Listen for a submit event on the form element
+    const form = document.querySelector('.post-form');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+    
+      // Get the user's thoughts from the input element
+      const input = document.querySelector('.post-input');
+      const thoughts = input.value;
+    
+      // Create a new div element for the user's post
+      const postDiv = document.createElement('div');
+      postDiv.classList.add('post');
+      postDiv.innerHTML = `
+        <p>${thoughts}</p>
+      `;
+      postsContainer.appendChild(postDiv);
+    
+      // Clear the input element
+      input.value = '';
+    });</script>

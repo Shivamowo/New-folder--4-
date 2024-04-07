@@ -26,7 +26,7 @@
         <form>
             <div class="button-container">
                 <button class="button" id="btn2">Sign up</button>
-                <button class="button" type="button1">log in</button>
+                <button class="button" type="button1" id="login-btn">log in</button>
             </div>
             
         
@@ -85,6 +85,12 @@
     const submitButton = document.getElementById("submit-button");
 
 submitButton.addEventListener("click", function() {
-    location.href= "page3.html"
+    location.href= "page2.html"
 });
+const loginbtn = document.getElementById("login-btn");
+
+loginbtn.addEventListener("click", function() {
+    location.href= "login2.html"});
+
+    
 </script>

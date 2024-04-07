@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Itim&display=swap" rel="stylesheet">
+        <style>
+            header{
+                border: 0px;
+                height: 100px;
+                border-bottom: 3px solid black;
+                background-color: rgb(211, 214, 255);
+                
+            }
+            .left_section{
+                display: absolute;
+                display: flex;
+                align-items: center;
+                grid-template-rows: auto;
+                column-gap: 40px;
+                margin-left: 200px;
+            }
+            .header_buttons {
+                height: 50px;
+                border-radius: 25px;
+                font-size: 25px;
+                background-color: rgb(170, 175, 250);
+                padding:0px 25px 0px 25px;
+                margin-right: 15px;
+                margin-left: 15px;
+                margin-top: 25px;
+            }
+            .search_bar{
+                width:250px;
+                height: 50px;
+                border-radius: 20px;
+                position: relative;
+                top: 10px;
+            }
+            .icon{
+                width: 150px;
+                position: absolute;
+                left: 0px;
+                top:10px;
+            }       
+            
+            .user_profile {
+                max-width: 200px; /* This sets the maximum width for the CSI logo. */
+                border-radius: 100px; /* This adds rounded corners to the CSI logo. */
+                border-color: rgb(170, 175, 250); /* This removes the outline from the CSI logo. */
+                transition: 0.7s;
+                }
+            .user_profile:hover{
+                cursor: pointer;
+                border-radius: 150px;
+                max-width: 250px;
+            }
+            .sidebar_left {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                top: 110px;
+                background-color: white;
+                width: 72px;
+                padding-top: 5px;
+                border-right: 3px solid rgb(0, 0, 0);
+            }
+
+            .sidebar-link {
+                height: 74px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                cursor: pointer;
+            }
+
+            .sidebar-link:hover {
+                background-color: rgb(235, 235, 235);
+            }
+
+            .sidebar-link img {
+                height: 30px;
+                margin-bottom: 4px;
+            }
+            .body{
+                position: absolute;
+            }
+            .about{
+                position: relative;
+                width: 1450px;
+            }
+            .sidebar_right{
+                position: relative;
+                left: 1450px;
+                bottom: 0;
+                width: 430px;
+                padding-top: 5px;
+                border-left: 3px solid rgb(0, 0, 0); 
+                padding-top: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            
+            .add_button{
+                height: 50px;
+                border-radius: 25px;
+                background-color: #c0fad4;
+                position: absolute;
+                bottom: 10px;
+                right: 20px;
+                border: 3px solid #C0FAD4;
+            }
+            .about{
+                position: absolute;
+                left: 50px;
+                top: 50px;
+                width: 1300px;
+                height:350px;
+                border-radius: 30px;
+                background-color: white;
+               
+            }
+            .pp{
+                height:50px;
+                width: 50px;
+                border-radius: 25px;
+                margin-left: 25px;   
+                margin-top: 20px; 
+            }
+            .name{
+                display: inline-block;
+                font-family: Itim;
+                margin: 0;
+                line-height: 0px; 
+                vertical-align: center;
+            }
+            .profile_description{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+            .username {
+                font-size: 25px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .user_description{
+                font-size: 25px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 0px;
+                color:grey;
+            }
+            .whats_happening{
+                background-color: rgb(211, 214, 255);
+                display: flex;
+                flex-direction: column;
+                padding: 0px 20px 40px 20px;
+                border-radius: 10px;
+                font-size: 20px;
+                border: 2px solid black;
+
+            }
+            .what{
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                border-bottom: 2px solid black;
+            }
+            .trends{
+                border-bottom: 2px solid black;
+            }
+            .messenger{
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .post{
+                display: flex;
+                border: 2px solid black;
+                width: 1200px;
+                height: 60px;
+                border-radius: 15px;
+                padding:10px;
+            }
+            .post_text::placeholder{
+                font-size: 26px;
+                font-weight: bold;
+            }
+            .post_text{
+                border: 0px;
+                width: 1000px;
+                font-size: 21px;
+            }
+            .post-button{
+                margin-top:5px;
+                width:80px;
+                height: 40px;
+                background-color: rgb(170, 175, 250);
+                border-radius:12px ;
+                font-size: 20px;
+
+            }
+            .posts-container{
+                border: 2px solid black;
+                margin-top: 50px;
+                border-radius: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding:20px;
+            }
+            .comment-box{
+                width:400px;
+            }
+            .img_iconn{
+                width:60px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="icon" src="/images/Start IT..png">
+            <div class="left_section">
+                <a href="homepage.html"><button class="header_buttons"  style="display: flex; align-items: center;"><img src="/images/home 1.png">Home</button></a>
+                <a><button class="header_buttons" style="display: flex; align-items: center;"><img src="/images/search (1) 1.png">Explore</button></a>
+                <input type="text" class="search_bar">
+                <a><button class="header_buttons" style="display: flex; align-items: center;"><img src="/images/group 1.png">Communities</button></a>
+                <a><button class="header_buttons" style="display: flex; align-items: center;"><img src="/images/layers 1.png">Projects</button></a>
+                <a><button class="header_buttons" style="display: flex; align-items: center;"><img src="/images/user 1.png">Profile</button></a>
+                <a><button class="header_buttons" style="display: flex; align-items: center;"><img src="/images/settings 1.png">Setting</button></a>
+            </div>
+            
+        </header>
+        <div class="body">
+            <div class="about">
+                <div class="post">
+                    <img  class="img_icon" src="/images/pp.png"> 
+                    <input type="text" placeholder="what's on your mind, kanak?" class="post_text">
+                    <a href="homepage2.html"><button class="post-button">Post</button></a>
+                </div>
+            </div>
+            <div class="sidebar_right">
+                <div class="profile_div">
+                    <img class="user_profile" src="/images/pp.png">
+                </div>
+                <div class="profile_description">
+                    <p class="username">@kanakcooldude</p>
+                    <p class="user_description">Innovator</p>
+                </div>
+                <div class="whats_happening">
+                    <div class="what">
+                        <p>What's Happening...</p>
+                    </div>
+                    <div class="trends">
+                        <p>#A New Wave Of Drug Discovery Sartups</p>
+                    </div>
+                    <div class="trends">
+                        <p>#Funding For Metaverse Startups Drops</p>
+                    </div>
+                    <div class="trends">
+                        <p>#High And Lows in Generative AI Funding</p>
+                    </div>
+                    <div class="trends">
+                        <p>#High-Flying Startups Focus on Drones</p>
+                    </div>
+
+                </div>
+                <div class="messenger">
+                    <img src="/images/messenger.jpg">
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+    </body>
+    <script>
+
+    </script>
+    
+</html>

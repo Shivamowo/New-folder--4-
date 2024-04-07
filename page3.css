@@ -85,8 +85,8 @@
         }
 
         .questionnaire {
-            margin-top: 20%;
-            margin-bottom: 40%;
+            margin-top: 10%;
+            margin-bottom: 20%;
             margin-left: 15%;
         }
         
@@ -151,3 +151,34 @@
             left: 0;
             z-index: 1000; /* This ensures that the image is displayed on top of other elements */
           }
+        .boxes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 80px;
+            /* margin-bottom: 200px; */
+
+
+        }
+        .shift {
+            display: inline-block;
+        }
+        .line {
+            border-bottom: 3px solid rgb(162, 149, 149);
+            display: relative;
+            margin-bottom: 60px;
+            width: 200px;
+        }
+        .phase1{
+            color: white;
+            background-color: rgb(212, 8, 8);
+        }
+        .phase2 {
+            background-color: rgb(162, 149, 149);
+            color: rgb(237, 223, 223);
+            z-index: 2;
+        }
+        #desc{
+            margin-left: 60px
+        }
+        
